@@ -47,7 +47,7 @@ Let's implement the first test-case according to the example given in 'run.js'.
 ```code
 Feature: Skipasspreis Calculator
 
-  Scenario Outline: Calculate ski pass price with full prices
+  Scenario: Calculate ski pass price with full prices
     Given an person with the age of 8
     When the price for a ticket is calculated
     Then the price is 25.00
@@ -73,6 +73,5 @@ The options can either be added on the command line, in your scripts or in the c
 
 ## Step 4: Enhancing the test cases to a scenario outline
 
-
-# Step 5: hooks and events 
+Finally, we want add more test to enhance the coverage. A simple possibility is by changing the scenario to scenario outline.
 

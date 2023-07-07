@@ -36,3 +36,43 @@ $ ./node_modules/.bin/cucumber-js
 
 After running cucumber-js, it informs us to add a configuration file called ./cucumber.js.
 
+## Step 3: Adding our first test
+
+We need to add a feature file containing our tests in Gherkin language. The default directory for
+feature files ist a directory called 'features'. cucumber-js is going to lookup any file in any subdirectory 
+of this location.
+
+Let's implement the first test-case according to the example given in 'run.js'.
+
+```code
+Feature: Skipasspreis Calculator
+
+  Scenario Outline: Calculate ski pass price with full prices
+    Given an person with the age of 8
+    When the price for a ticket is calculated
+    Then the price is 25.00
+```
+
+Executing this script will result in some errors displayed on the command line. Following the instructions from the error output
+we can copy the stub implementation into a JavaScript file, which will contain the step implementation. You can choose any name
+for your step file as long its located in the 'features' folder.
+
+## Step 4: Adding a html report
+
+cucumber-js provides different kinds of reports. These reports can be specified by passing a 
+[formatter](https://github.com/cucumber/cucumber-js/blob/main/docs/formatters.md) parameter on the command line.
+
+The default output is the console with the summary parameter ('-f summary').
+
+Creating a html report can be achieved with the following:
+```shell
+$ npx cucumber-js -f html:test/report/cucumber_report.html
+```
+
+The options can either be added on the command line, in your scripts or in the configuration file.
+
+## Step 4: Enhancing the test cases to a scenario outline
+
+
+# Step 5: hooks and events 
+

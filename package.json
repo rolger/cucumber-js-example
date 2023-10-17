@@ -3,6 +3,6 @@
     "test": "cucumber-js"
   },
   "dependencies": {
-    "@cucumber/cucumber": "^9.2.0"
+    "@cucumber/cucumber": "10.0.0"
   }
 }

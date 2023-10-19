@@ -3,6 +3,7 @@
     "test": "cucumber-js"
   },
   "dependencies": {
-    "@cucumber/cucumber": "^9.2.0"
+    "@cucumber/cucumber": "^10.0.0",
+    "cucumber-html-reporter": "^5.5.0"
   }
 }

@@ -1,5 +1,5 @@
 Feature: test all possibilities of ticket prices
-
+  @foo
   Scenario: calculate the price for a person fo 8 years
     Given a person of age 8 is a "child"
     When we calculate the ticket price
